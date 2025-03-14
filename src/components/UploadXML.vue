@@ -44,7 +44,7 @@ const uploadFile = async () => {
 </script>
 
 <template>
-  <div class="upload-container">
+  <section class="upload-container">
     <h2>Subir Archivo XML</h2>
     <input type="file" accept=".xml" @change="handleFileChange" />
     <button @click="uploadFile" :disabled="uploading">
@@ -52,7 +52,7 @@ const uploadFile = async () => {
     </button>
     <p v-if="uploadSuccess" class="success">{{ uploadSuccess }}</p>
     <p v-if="uploadError" class="error">{{ uploadError }}</p>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
