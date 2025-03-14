@@ -1,15 +1,14 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TestGraphQL from './components/TestGraphQL.vue';
 import UploadXML from "./components/UploadXML.vue";
+import InvoiceList from "./components/InvoiceList.vue";
 
 </script>
 
 <template>
   <div>
     <h1>Bienvenido a Caikei</h1>
-    <TestGraphQL />
     <UploadXML />
+    <InvoiceList />
   </div>
 </template>
 

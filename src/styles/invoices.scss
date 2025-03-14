@@ -1,0 +1,60 @@
+.invoice-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  text-align: center;
+
+  h2 {
+    color: #333;
+  }
+
+  .loading {
+    font-size: 18px;
+    color: blue;
+  }
+
+  .error {
+    font-size: 18px;
+    color: red;
+  }
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .status-pending {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .status-paid {
+    color: green;
+    font-weight: bold;
+  }
+
+  .status-overdue {
+    color: red;
+    font-weight: bold;
+  }
+
+  .status-unknown {
+    color: gray;
+    font-weight: bold;
+  }
+}
