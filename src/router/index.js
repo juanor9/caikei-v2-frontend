@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../pages/Home.vue';
+import InvoiceList from '../components/InvoiceList.vue';
+import InvoiceDetail from '../components/InvoiceDetail.vue';
+
 
 const routes = [
-  { path: '/', component: Home }
+  { path: '/', component: InvoiceList },
+  { path: '/invoice/:invoiceNumber', component: InvoiceDetail, props: true },
 ];
 
 const router = createRouter({
