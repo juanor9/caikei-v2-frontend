@@ -14,7 +14,6 @@ query {
 `;
 
 const { result, loading, error } = useQuery(GET_INVOICES);
-console.log("🚀 ~ result:", result);
 
 </script>
 
@@ -32,6 +31,7 @@ console.log("🚀 ~ result:", result);
           <th>Total</th>
           <th>Fecha</th>
           <th>Estado</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -40,6 +40,9 @@ console.log("🚀 ~ result:", result);
           <td>${{ invoice.total ? Number(invoice.total).toFixed(0) : "0" }}</td>
           <td>{{ invoice.date }}</td>
           <td :class="getStatusClass(invoice.status)">{{ formatStatus(invoice.status) }}</td>
+          <td>
+            <router-link :to="`/invoice/${invoice.invoiceNumber}`">Ver Detalle</router-link>
+          </td>
         </tr>
       </tbody>
     </table>

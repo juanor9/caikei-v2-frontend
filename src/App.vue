@@ -1,14 +1,11 @@
 <script setup>
-import UploadXML from "./components/UploadXML.vue";
-import InvoiceList from "./components/InvoiceList.vue";
 
 </script>
 
 <template>
   <div>
     <h1>Bienvenido a Caikei</h1>
-    <UploadXML />
-    <InvoiceList />
+    <router-view></router-view>
   </div>
 </template>
 
