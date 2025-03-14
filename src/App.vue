@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TestGraphQL from './components/TestGraphQL.vue';
+import UploadXML from "./components/UploadXML.vue";
 
 </script>
 
@@ -8,6 +9,7 @@ import TestGraphQL from './components/TestGraphQL.vue';
   <div>
     <h1>Bienvenido a Caikei</h1>
     <TestGraphQL />
+    <UploadXML />
   </div>
 </template>
 
